@@ -64,3 +64,4 @@ end
 
 gem "graphql", "~> 2.4"
 gem "react-rails", "~> 3.2"
+gem 'dotenv-rails', groups: [:development, :test]
