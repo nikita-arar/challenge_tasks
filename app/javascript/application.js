@@ -1,8 +1,14 @@
 import React from "react";
 import ReactDOM from 'react-dom/client';
-import TaskManager from "./components/TaskManager";
+import App from "./src/TaskManager";
+import {ApolloProvider} from "@apollo/client";
+import client from './src/apolloClient'
 
 document.addEventListener("DOMContentLoaded", () => {
     const root = ReactDOM.createRoot(document.getElementById('root'));
-    root.render(<TaskManager />);
+    root.render(
+        <ApolloProvider client={client}>
+            <App />
+        </ApolloProvider>
+    );
 });

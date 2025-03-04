@@ -2,14 +2,21 @@
   "name": "app",
   "private": true,
   "devDependencies": {
-    "esbuild": "^0.25.0"
+    "@graphql-tools/webpack-loader": "^7.0.0",
+    "esbuild": "^0.25.0",
+    "graphql-tag": "^2.12.6"
   },
   "scripts": {
     "dev": "esbuild app/javascript/application.js --bundle --watch --outdir=app/assets/builds --loader:.js=jsx",
     "build": "esbuild app/javascript/*.* --bundle --sourcemap --format=esm --outdir=app/assets/builds --public-path=/assets --loader:.js=jsx"
   },
   "dependencies": {
+    "@apollo/client": "^3.13.1",
+    "dotenv": "^16.4.7",
+    "graphql": "^16.10.0",
+    "prettier": "^3.5.3",
     "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "react-dom": "^19.0.0",
+    "styled-components": "^6.1.15"
   }
 }
