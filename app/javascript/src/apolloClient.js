@@ -1,7 +1,9 @@
 import { ApolloClient, InMemoryCache } from "@apollo/client";
 
+const graphqlEndpoint = document.querySelector("meta[name='graphql-endpoint']").getAttribute("content");
+
 const client = new ApolloClient({
-  uri: "http://localhost:3000/graphql",
+  uri: graphqlEndpoint,
   cache: new InMemoryCache(),
 });
 
