@@ -4,5 +4,5 @@
 # http://en.wikipedia.org/wiki/Cron
 
 every 2.minutes do
-  rake 'recurring:generate_new_tasks'
+  rake "recurring:generate_new_tasks"
 end

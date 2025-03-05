@@ -58,7 +58,7 @@ end
 
 gem "graphql", "~> 2.4"
 gem "react-rails", "~> 3.2"
-gem 'dotenv-rails', groups: [:development, :test]
+gem "dotenv-rails", groups: [ :development, :test ]
 
 gem "jsbundling-rails", "~> 1.3"
-gem 'whenever', require: false
+gem "whenever", require: false

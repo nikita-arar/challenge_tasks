@@ -2,8 +2,8 @@
 
 module Types
   class QueryType < Types::BaseObject
-    field :projects, [ProjectType], null: false
-    field :tasks, [TaskType], null: false do
+    field :projects, [ ProjectType ], null: false
+    field :tasks, [ TaskType ], null: false do
       argument :project_id, ID, required: true
     end
 
